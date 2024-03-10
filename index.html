@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploração Espacial</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg dropdown">
+            <div class="container">
+                <h1>Exploração Espacial</h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ida-a-lua">Ida a Lua</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sideral">Espaço Sideral</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#marte">Ida a Marte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#satelite">Satélite</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!--o atributo data-bs-ride é utilizado para indicar se o carousel vai iniciar automaticamente(autoplay), caso não ao inves de "carousel" deve receber "false"-->
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel-espaço">
+            <!--essa classe "carousel-inner encolve os itens individuais do carrossel. Essa classe cria a área que contém e exibe os slides do carrossel."-->
+            <div class="carousel-inner">
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <!--a classe d-block é display block e w-100 é width 100%-->
+                    <img  class="d-block w-100" src="imagens/pexels-alex-andrews-816608.jpg" alt="Espaço Sideral">
+                    <div class="carousel-caption">
+                        <h4>Espaço Sideral</h4>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <!--a classe d-block é display block e w-100 é width 100%-->
+                    <img  class="d-block w-100" src="imagens/pexels-alex-andrews-821644.jpg" alt="Galáxia">
+                    <div class="carousel-caption">
+                        <h4>Galáxia</h4>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <!--a classe d-block é display block e w-100 é width 100%-->
+                    <img  class="d-block w-100" src="imagens/pexels-maria-orlova-4947569.jpg" alt="Sistema planetário">
+                    <div class="carousel-caption">
+                        <h4>Sistema planetário</h4>
+                    </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-espaço" type="button" class="carousel-control-prev" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-espaço" class="carousel-control-next" data-bs-slide="next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="container row mt-3">
+            <div class="col-3">
+                <div class="card card text-bg-dark">
+                    <img class="ajuste-imagem" id="ida-a-lua" src="imagens/lua.jpeg" alt="ida a lua">
+                    <div    class="card-img-overalay">
+                        <h5 class="card-title">Ida a Lua</h5>
+                        <p class="card-text">
+                        Mr. New Armstrong
+                        </p>
+                        <a class="btn btn-primary" href="#">Saiba mais...</a>
+                    </div>
+                </div>
+            </div>
+                <div class="col-3">
+                    <div class="card card text-bg-dark">
+                    <img class="ajuste-imagem" id="sideral" src="imagens/espaco_sideral.jpeg" alt="Espaço Sideral">
+                        <div class="card-img-overalay">
+                            <h5 class="card-title">Espaço Sideral</h5>
+                            <p class="card-text">
+                            Mr. Brown
+                            </p>
+                            <a class="btn btn-primary" href="#">Saiba mais...</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-3">
+                        <div class="card card text-bg-dark">
+                            <img class="ajuste-imagem" id="marte" src="imagens/marte.jpeg" alt="Ida a Marte">
+                            <div class="card-img-overalay">
+                                <h5 class="card-title">Ida a Marte</h5>
+                                <p class="card-text">Mr. Smith</p>
+                                <a class="btn btn-primary" href="">Saiba mais...</a>
+                            </div>
+                        </div>
+                    </div>
+        <div class="col-3">
+            <div class="card card text-bg-dark">
+                <img class="ajuste-imagem" id="satelite" src="imagens/satelite.jpg" alt="Satélite">
+                <div class="card-img-overalay" >
+                    <h5 class="card-title">Satélite</h5>
+                    <p class="card-text">Mr. Franklin</p>
+                    <a class="btn btn-primary" href="#">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
